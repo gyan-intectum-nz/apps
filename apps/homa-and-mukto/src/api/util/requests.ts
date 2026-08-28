@@ -2,7 +2,7 @@ import { IncomingMessage } from 'node:http';
 
 import Busboy from 'busboy';
 
-const maxFileSize = 5 * 1024 * 1024; // 5MB
+const maxFileSize = 25 * 1024 * 1024; // 25MB
 
 export const getBody = <T>(req: IncomingMessage) =>
 {
